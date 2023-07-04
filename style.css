@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+}
+
+html {
+  font-size: 62.5%;
+  /* Para cada 1rem no código abaixo, será considerado 10px */
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
+  /* 1.6rem = 16px */
+}
+
+.bg-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 50vh;
+  width: 100%;
+  background-color: var(--blue);
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+}
+
+header > p {
+  margin: 20px auto 20px;
+  width: 380px;
+  font-weight: 400;
+}
+
+main {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+main > div {
+  background-color: #fff;
+  height: 70vh;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #a5a5a5ce;
+  overflow: hidden;
+  transition: transform 200ms ease;
+}
+
+main > div:hover {
+  transform: scale(1.05);
+}
+
+
+main > div > .header {
+  padding: 20px;
+  height: 79px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main > div > .main {
+  padding: 0 20px;
+}
+
+main > div > .main > .price {
+  font-size: 4rem;
+  font-weight: bolder;
+  padding: 15px 0;
+}
+
+main > div > .main > .price > span {
+  font-size: 1.8rem;
+  opacity: 0.8;
+}
+
+main > div > .main > p {
+  padding: 10px 0;
+  opacity: 0.5;
+}
+
+main > div > .main > hr {
+  opacity: 0.4;
+  margin: 10px 0;
+}
+
+main > div > .main > .list__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 175px;
+}
+
+main > div > .main > .list__button > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 25px;
+  list-style-image: url("assets/check.svg");
+}
+
+main > div > .main > .list__button > ul > li {
+  padding-left: 5px;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+main > div > .main > .list__button > button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  text-transform: uppercase;
+  background: none;
+  cursor: pointer;
+  transition: transform 200ms ease;
+  font-weight: 700;
+  /* margin-top: 100%; */
+}
+
+main > div > .main > .list__button > button:hover {
+  transform: scale(1.05);
+}
+
+main > div:nth-child(2) > .header {
+  background-color: var(--yellow);
+  color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > div:nth-child(2) > .header > span:nth-child(2) {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 1.4rem;
+}
+
+main > div:nth-child(2) > .main > .list__button > button {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+@media (max-width: 1040px) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media (max-width: 940px) {
+  main {
+    flex-direction: column;
+  }
+}

@@ -1,7 +1,7 @@
-<h1 align="center"> Desafio Pricing Table by Rocketseat</h1>
+<h1 align="center"> Pricing Table </h1>
 
 <p align="center">
-Neste desafio você vai desenvolver uma página com uma tabela com as opções de preços/planos do produto/serviço.
+  Uma página com uma tabela com as opções de preços/planos do produto/serviço.
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Dê uma olhada no projeto [aqui](https://matheusfdosan.github.io/desafio-princing-table/).
+Dê uma olhada no projeto [aqui](https://matheusfdosan.github.io/princing-table/).
 
 ## 🔖 Layout
 
